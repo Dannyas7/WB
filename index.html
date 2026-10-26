@@ -21,7 +21,7 @@
 
         .contenido {
             margin: 50px auto;
-            max-width: 700px;
+            max-width: 900px;
             padding: 20px;
             background: white;
             border-radius: 10px;
@@ -54,7 +54,7 @@
             margin-top: 20px;
             max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border: 2px solid #ddd;
         }
     </style>
 </head>
@@ -69,7 +69,7 @@
         <h2>Hola Putinga</h2>
 
         <p>
-            Esta es una página web simple funcionando localmente.
+            Esta es una página web simple funcionando desde GitHub Pages.
         </p>
 
         <button onclick="saludar()">
@@ -78,7 +78,10 @@
 
         <p id="mensaje"></p>
 
-        <img id="imagen1" src="1.jpg" alt="Imagen de prueba">
+        <img
+            id="imagen1"
+            src="https://dannyas7.github.io/WB/1.jpg"
+            alt="Imagen de prueba">
     </div>
 
     <footer>
@@ -89,7 +92,7 @@
         function saludar() {
 
             document.getElementById("mensaje").innerHTML =
-                "✅ El botón funciona. Ya estás ejecutando JavaScript.";
+                "✅ El botón funciona y la imagen debería aparecer abajo.";
 
             document.getElementById("imagen1").style.display = "block";
         }
@@ -97,3 +100,4 @@
 
 </body>
 </html>
+`
