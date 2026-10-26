@@ -48,6 +48,14 @@
             background: #222;
             color: white;
         }
+
+        #imagen1 {
+            display: none;
+            margin-top: 20px;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 <body>
@@ -59,6 +67,7 @@
 
     <div class="contenido">
         <h2>Hola Putinga</h2>
+
         <p>
             Esta es una página web simple funcionando localmente.
         </p>
@@ -68,6 +77,8 @@
         </button>
 
         <p id="mensaje"></p>
+
+        <img id="imagen1" src="1.jpg" alt="Imagen de prueba">
     </div>
 
     <footer>
@@ -76,8 +87,11 @@
 
     <script>
         function saludar() {
+
             document.getElementById("mensaje").innerHTML =
                 "✅ El botón funciona. Ya estás ejecutando JavaScript.";
+
+            document.getElementById("imagen1").style.display = "block";
         }
     </script>
 
