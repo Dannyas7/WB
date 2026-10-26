@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 30px;
+        }
+
+        .contenido {
+            margin: 50px auto;
+            max-width: 700px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #005ea6;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚀 Bienvenido a mi página web</h1>
+        <p>Creada con HTML, CSS y JavaScript</p>
+    </header>
+
+    <div class="contenido">
+        <h2>Hola Daniel</h2>
+        <p>
+            Esta es una página web simple funcionando localmente.
+        </p>
+
+        <button onclick="saludar()">
+            Haz clic aquí
+        </button>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <footer>
+        © 2026 - Página de prueba
+    </footer>
+
+    <script>
+        function saludar() {
+            document.getElementById("mensaje").innerHTML =
+                "✅ El botón funciona. Ya estás ejecutando JavaScript.";
+        }
+    </script>
+
+</body>
+</html>
