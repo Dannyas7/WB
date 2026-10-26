@@ -2,47 +2,82 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Sitio de Prueba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página</title>
+
     <style>
-        body{
+        body {
             font-family: Arial, sans-serif;
-            background:#0f172a;
-            color:white;
-            text-align:center;
-            padding-top:100px;
+            background: #f4f6f9;
+            margin: 0;
+            text-align: center;
         }
 
-        button{
-            background:#22c55e;
-            border:none;
-            padding:15px 25px;
-            font-size:18px;
-            border-radius:8px;
-            cursor:pointer;
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 30px;
         }
 
-        #mensaje{
-            margin-top:20px;
-            font-size:20px;
+        .contenido {
+            margin: 50px auto;
+            max-width: 700px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #005ea6;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #222;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-    <h1>🚀 Mi primera página en GitHub Pages</h1>
+    <header>
+        <h1>🚀 Bienvenido a mi página web</h1>
+        <p>Creada con HTML, CSS y JavaScript</p>
+    </header>
 
-    <p>Publicada por Daniel usando GitHub.</p>
+    <div class="contenido">
+        <h2>Hola Daniel</h2>
+        <p>
+            Esta es una página web simple funcionando localmente.
+        </p>
 
-    <button onclick="saludar()">
-        Haz clic aquí
-    </button>
+        <button onclick="saludar()">
+            Haz clic aquí
+        </button>
 
-    <div id="mensaje"></div>
+        <p id="mensaje"></p>
+    </div>
+
+    <footer>
+        © 2026 - Página de prueba
+    </footer>
 
     <script>
         function saludar() {
             document.getElementById("mensaje").innerHTML =
-                "✅ Funciona correctamente";
+                "✅ El botón funciona. Ya estás ejecutando JavaScript.";
         }
     </script>
 
